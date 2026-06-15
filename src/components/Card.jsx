@@ -1,6 +1,8 @@
 import {Bookmark} from "lucide-react";
 
-const Card = () => {
+const Card = ({item}) => {
+
+  console.log(item);
 
   return (
     <>
@@ -15,14 +17,11 @@ const Card = () => {
         </div>
 
         <div className="center">
-          <span>Amazon</span>
-          <h2>Job Title</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <button className="btn btn--badge-small">
-            Part Time
-          </button>
+          <span>{item.companyName}</span>
+          <h2>{item.jobTitle}</h2>
+          <p>{item.description}</p>
+          <button className="btn btn--badge-small">{item.type}</button>
         </div>
-        
       </div>
     </>
   );

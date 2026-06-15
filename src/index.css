@@ -8,7 +8,7 @@
 }
 
 .card {
-  width: auto;
+  width: 19%;
   display: block;
   flex-shrink: 1;
   background: linear-gradient(194deg, #54cdb8, #075da1 60%);
