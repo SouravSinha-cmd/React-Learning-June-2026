@@ -1,6 +1,7 @@
-import Navbar from "./components/Navbar";
+import Navbar from "./components/navbar/Navbar";
 import Card from "./components/Card";
 import Users from "./components/Users"; 
+import Buttons from "./components/button/Buttons";
 
 const App = () => {
 
@@ -57,6 +58,8 @@ const App = () => {
             return (<Card item={item} />)
           })}
         </div>
+        <Buttons />
+
 
         {/* <Users /> */}
     </>
