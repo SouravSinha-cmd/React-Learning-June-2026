@@ -2,6 +2,7 @@ import Navbar from "./components/navbar/Navbar";
 import Card from "./components/Card";
 import Users from "./components/Users"; 
 import Buttons from "./components/button/Buttons";
+import Section1 from "./components/Section1/Section";
 
 const App = () => {
 
@@ -51,17 +52,17 @@ const App = () => {
 
   return (
     <>
-      <Navbar />
-        {/* <Card  /> */}
-        <div className="card-wrapper">
-          {jobOpenings.map((item) => {
-            return (<Card item={item} />)
-          })}
-        </div>
-        <Buttons />
+      {/* <Navbar /> */}
+      {/* <Card  /> */}
+      {/* <div className="card-wrapper">
+      {jobOpenings.map((item) => {
+        return (<Card item={item} />)
+      })}
+      </div>
+      <Buttons /> */}
+      {/* <Users /> */}
 
-
-        {/* <Users /> */}
+        <Section1 />
     </>
   );
 }
